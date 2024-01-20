@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f71def00f4.js" crossorigin="anonymous"></script>
+
     <title>Drinko</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <header>
+        <div class="flex items-center mt-2 lg:justify-around lg:mt-6">
+            <div class="flex items-center gap-28 lg:gap-0">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="font-medium text-[#3C3C3C] text-[16px]">Home</a></li>
+                        <li><a class="font-medium text-[#3C3C3C] text-[16px]">Menu</a></li>
+                        <li><a class="font-medium text-[#3C3C3C] text-[16px]">About Us</a></li>
+                        <li><a class="font-medium text-[#3C3C3C] text-[16px]">Contact Us</a></li>
+                        <li><a class="font-medium text-[#3C3C3C] text-[16px] btn-outline btn-accent">Login</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl lg:text-4xl font-black font-sans">Test <span
+                        class="text-[#F00]">Drinko</span></a>
+            </div>
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal">
+                    <li><a class="font-medium text-[#3C3C3C] text-[16px]">Home</a></li>
+                    <li><a class="font-medium text-[#3C3C3C] text-[16px]">Menu</a></li>
+                    <li><a class="font-medium text-[#3C3C3C] text-[16px]">About Us</a></li>
+                    <li><a class="font-medium text-[#3C3C3C] text-[16px]">Contact Us</a></li>
+                    <li><a class="font-medium text-[#3C3C3C] text-[16px] btn-outline btn-accent">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- header banner -->
+        <div class="flex flex-col justify-between gap-3 rounded-md mt-4 mx-4 lg:mx-56 lg:mt-6 lg:py-6 lg:flex-row lg:text-left"
+            >
+            <!-- text section -->
+            <div class="flex-1 space-y-7">
+                <h1 class="font-extrabold text-3xl lg:text-6xl">It's good <br> tea time at The <br> Tea House</h1>
+                <p class="text-[#777]">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+                <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-[#fff]">Explore More <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <!-- image section -->
+            <div class="flex-1 relative">
+                <img src="images/banner.png" alt="">
+                <div class="flex left-8 -my-10 shadow-lg gap-3 items-center absolute rounded-xl bg-white py-4 px-4 w-2/3 lg:left-10 lg:flex lg:w-[45%] lg:-mt-20 lg:gap-3">
+                    <div>
+                        <i class="fa-solid fa-star text-xl lg:text-3xl text-[#FFF082]"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-left text-xl font-bold lg:text-3xl lg:font-extrabold">5.00</h3>
+                        <p class="text-sm text-[#777] lg:text-[16px]">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
+
 </html>
