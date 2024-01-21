@@ -11,11 +11,22 @@
     <title>Drinko</title>
 
     <style>
+
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
+        section {
+            margin-top: 160px;
+        }
+
+        @media screen and (max-width: 640px) {
+            section {
+                margin-top: 80px;
+            }
+        }
+
     </style>
 
 </head>
@@ -85,7 +96,7 @@
 
     <main class="mx-5 lg:mx-56">
         <!-- feature section -->
-        <section class="my-40">
+        <section>
             <div class="space-y-6 mb-12">
                 <h3 class="text-center font-extrabold text-5xl">Our Featured Products</h3>
                 <p class="text-center px-10">There are many variations of passages of Lorem Ipsum available, but the
@@ -93,35 +104,70 @@
                     look even slightly believable. </p>
             </div>
             <div class="flex justify-between gap-6 flex-col lg:flex-row">
-                <div class="space-y-6 rounded-lg p-5 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
+                <div class="space-y-6 rounded-lg p-5 shadow-lg bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
                     <img class="mx-auto" src="images/tea-1.png" alt="">
                     <div class="text-center">
                         <h4 class="font-extrabold text-xl">Milk Tea</h4>
-                        <p class="py-2 text-[16px] font-semibold text-[#777]">Creamer could be replaced by fresh milk</p>
+                        <p class="py-2 text-[16px] font-semibold text-[#777]">Creamer could be replaced by fresh milk
+                        </p>
                     </div>
                 </div>
-                <div class="space-y-6 rounded-lg p-5 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
+                <div class="space-y-6 rounded-lg p-5 shadow-lg bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
                     <img class="mx-auto" src="images/tea-2.png" alt="">
                     <div class="text-center">
                         <h4 class="font-extrabold text-xl">White Tea</h4>
-                        <p class="py-2 text-[16px] font-semibold text-[#777]">Creamer could be replaced by fresh milk</p>
+                        <p class="py-2 text-[16px] font-semibold text-[#777]">Creamer could be replaced by fresh milk
+                        </p>
                     </div>
                 </div>
-                <div class="space-y-6 rounded-lg p-5 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
+                <div class="space-y-6 rounded-lg p-5 shadow-lg bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
                     <img class="mx-auto" src="images/tea-3.png" alt="">
                     <div class="text-center">
                         <h4 class="font-extrabold text-xl">Black Tea</h4>
-                        <p class="py-2 text-[16px] font-semibold text-[#777]">Creamer could be replaced by fresh milk</p>
+                        <p class="py-2 text-[16px] font-semibold text-[#777]">Creamer could be replaced by fresh milk
+                        </p>
                     </div>
                 </div>
-                <div class="space-y-6 rounded-lg p-5 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
+                <div class="space-y-6 rounded-lg p-5 shadow-lg bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
                     <img class="mx-auto" src="images/tea-4.png" alt="">
                     <div class="text-center">
                         <h4 class="font-extrabold text-xl">Ice Tea</h4>
-                        <p class="py-2 text-[16px] font-semibold text-[#777]">Creamer could be replaced by fresh milk</p>
+                        <p class="py-2 text-[16px] font-semibold text-[#777]">Creamer could be replaced by fresh milk
+                        </p>
                     </div>
-                </div>  
+                </div>
             </div>
+        </section>
+
+        <!-- Great Tea, Freshly Presented -->
+        <section class="flex flex-col-reverse lg:flex-row gap-12">
+            <!-- left side -->
+           <div class="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-7">
+                <div class="w-full lg:w-[238px] h-[136px] opacity-[0.1] rounded-md bg-gradient-to-r from-[#F00] to-[#FF8938]"></div>
+                <div class="row-span-2 bg-[#E6A6231A] p-10 rounded-md">
+                    <img class="mx-auto relative top-6" src="images/fresh-1.png" alt="">
+                </div>
+                <div class="row-span-2 bg-[#574A291A] p-10 rounded-md">
+                    <img class="mx-auto relative top-6" src="images/fresh-2.png" alt="">
+                </div>
+                <div class="w-[238px] h-[136px] rounded-md bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF]"></div>
+           </div>
+
+           <!-- right side -->
+           <div class="flex-1">
+                <div class="space-y-5">
+                    <h1 class="font-extrabold text-5xl">Great Tea, Freshly <br> Presented</h1>
+                    <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                </div>
+                <div class="pt-7 space-y-1">
+                    <h3 class="font-extrabold text-[20px]">Unique Taste</h3>
+                    <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                </div>
+                <div class="pt-4 space-y-1">
+                    <h3 class="font-extrabold text-[20px]">Premium Quality</h3>
+                    <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
+                </div>
+           </div>
         </section>
     </main>
 </body>
